@@ -1,9 +1,11 @@
 <script setup lang="ts">
-import TheWelcome from '@/components/TheWelcome.vue'
+import CompositionApi from '@/components/CompositionApi.vue'; // @ is an alias to /src
+import OptionsApi from '@/components/OptionsApi.vue'; // @ is an alias to /src
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <CompositionApi/>
+    <OptionsApi/>
   </main>
 </template>

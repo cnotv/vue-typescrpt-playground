@@ -1,4 +1,5 @@
 import Vue from 'vue';
+import VueCompositionAPI from '@vue/composition-api';
 import App from './App.vue';
 import router from './router';
 import store from './store';
@@ -10,3 +11,5 @@ new Vue({
   store,
   render: (h) => h(App),
 }).$mount('#app');
+
+Vue.use(VueCompositionAPI);

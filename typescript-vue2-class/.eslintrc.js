@@ -1,3 +1,5 @@
+require("@rushstack/eslint-patch/modern-module-resolution");
+
 module.exports = {
   root: true,
   env: {
@@ -9,7 +11,9 @@ module.exports = {
     '@vue/typescript/recommended',
   ],
   parserOptions: {
-    ecmaVersion: 2020,
+    parser: "espree", // <-
+    ecmaVersion: 2022, // <-
+    sourceType: "module"
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',

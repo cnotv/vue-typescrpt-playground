@@ -1,0 +1,9 @@
+{
+  "name": "typescript-playground",
+  "version": "0.0.0",
+  "scripts": {
+    "start:1": "cd typescript-vue2 && yarn serve",
+    "start:2": "cd typescript-vue3 && yarn dev",
+    "start:3": "cd typescript-vue2-class && yarn serve"
+  }
+}
